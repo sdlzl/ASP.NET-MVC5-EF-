@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+
+
+<div class="headertwo clearfloat" id="header">
+    <a href="javascript:history.go(-1)" class="fl box-s"><i class="iconfont icon-arrow-l fl"></i></a>
+    <p class="fl">登录</p>
+</div>
+
+<div class="sign clearfloat" id="main">
+    <ul>
+        <li class="clearfloat">
+            <i class="iconfont icon-phone fl"></i>
+            <input type="text" id="phoneNum" name="phoneNum" value="" placeholder="请输入手机号" class="fl phone" />
+        </li>
+        <li class="clearfloat">
+            <i class="iconfont icon-lock fl"></i>
+            <input type="text" id="password" name="password" value="" placeholder="请输入密码" class="fl phone" />
+        </li>
+    </ul>
+    <a href="#" class="pay-btn clearfloat" id="btn_Login">
+        登录
+    </a>
+    <div class="bottom clearfloat">
+        <p class="fl">
+            还不是会员？
+            <a href="register.html">立即注册</a>
+        </p>
+        <a href="~/User/ForGotPassword" class="fr">忘记密码？</a>
+    </div>
+</div>
+
+@section FootScript{
+    
+    <script type="text/javascript" src="~/js/jquery.SuperSlide.2.1.js"></script>
+   
+    <script type="text/javascript">
+        $(function () {
+            $("#btn_Login").click(function () {
+                var phoneNum = $("#phoneNum").val();
+                var password = $("#password").val();
+                if (phoneNum.length <= 0 || password.length <= 0)
+                {
+                    alert("请输入手机号或者密码");
+                    return false;
+                }
+                $.ajax({
+                    url: "/Main/Login",
+                    dataType: "json",
+                    type: "post",
+                    data: {phoneNum:phoneNum,password:password},
+                    success: function (res) {
+                        if (res.status == "ok") {
+                            location.href = "/Main/Index";
+                        }
+                        else {
+
+                            alert(res.errorMsg);
+                        }
+                    },
+                  error:function(){
+                        
+                            alert("服务器请求失败");
+                        }
+                });
+
+
+            });
+
+
+
+        });
+
+
+    </script>
+
+}

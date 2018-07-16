@@ -1,0 +1,28 @@
+﻿@using ZSZ.CommonMVC
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Page1</title>
+</head>
+<body>
+    <div> 
+        @{ 
+            MyPager page = new MyPager();
+            page.CurrentPageClassName = "active";
+            page.MaxPageCount = 10;
+            page.UrlPattern = "Data?pn={pn}";
+            page.PageIndex = 5;
+            page.TotalCount = 50;
+            page.PageSize = 5;
+        }
+        @Html.Raw(page.GetPageHtml());
+
+    </div>
+</body>
+</html>

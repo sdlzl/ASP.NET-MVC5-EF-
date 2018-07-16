@@ -1,0 +1,71 @@
+﻿@model ZSZ.DTO.HousePicDTO[]
+@{
+    ViewBag.Title = "PicList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/lib/lightbox2/2.8.1/css/lightbox.css" rel="stylesheet" type="text/css">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 图片管理 <span class="c-gray en">&gt;</span> 图片展示 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> </span> <span class="r">共有数据：<strong>@Model.Length</strong> 条</span> </div>
+    <div class="portfolio-content">
+        <ul class="cl portfolio-area">
+            @foreach(var item in Model)
+            {
+            <li class="item">
+                <div class="portfoliobox">
+                    <input class="checkbox" name="selectedPicIds" type="checkbox" value="@item.Id">
+                    <div class="picbox"><a href="@item.Url" data-lightbox="gallery" data-title="客厅1"><img src="@item.ThumbUrl"></a></div>
+                </div>
+            </li>
+            }          
+        </ul>
+    </div>
+</div>
+
+@section FootScript{
+    <script type="text/javascript" src="~/lib/lightbox2/2.8.1/js/lightbox-plus-jquery.min.js"></script>
+    
+  <script type="text/javascript">
+        $(function () {
+            $.Huihover(".portfolio-area li");
+        });
+
+        function datadel()
+        {
+
+            var chk_value = [];//定义一个数组  
+            $('input[name="selectedPicIds"]:checked').each(function () {//遍历每一个名字为interest的复选框，其中选中的执行函数  
+                chk_value.push($(this).val());//将选中的值添加到数组chk_value中  
+            });
+            var chkstring = chk_value.join(",");
+            alert(chkstring);
+
+            $.ajax({
+                dataType: "json", type: "post", url: "/House/PicBatchDelete",
+                data: { selectedPicIds: chk_value },
+                success: function (res)
+                {
+                    if (res.status == "ok") {
+                        location.reload();
+                    }
+                    else {
+
+                        alert("删除失败");
+                    }
+
+                },
+                error: function ()
+                {
+                    alert("服务器请求失败");
+                }
+
+
+
+
+            });
+
+
+
+        }
+ </script>
+    }

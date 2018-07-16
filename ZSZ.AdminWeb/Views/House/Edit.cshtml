@@ -1,0 +1,281 @@
+﻿@model ZSZ.AdminWeb.Models.HouseEditGetModel
+@{
+    ViewBag.Title = "HouseEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/lib/ueditor/ueditor.config.js"></script>
+<script src="~/lib/ueditor/ueditor.all.js"></script>
+<script src="~/lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<form id="EditForm" class="form form-horizontal">
+    <input  type="hidden" id="id" name="id" value="@Model.House.Id"/>
+    <input  type="hidden" id="hidden_CityId" name="hidden_CityId" value="@Model.House.CityId"/>
+    <input  type="hidden" id="hidden_CreateTime" name="hidden_CreateTime" value="@Model.House.CreateDateTime"/>
+    <div class="row cl ">
+
+        <label class="form-label col-2"><span class="c-red">*</span>区域：</label>
+        <div class="formControls col-2">
+            @Html.DropDownList("regionId", new SelectList(Model.Regions, nameof(RegionDTO.Id),
+              nameof(RegionDTO.Name), Model.House.RegionId))
+        </div>
+
+
+
+
+
+        <label class="form-label col-2 "><span class="c-red">*</span>小区：</label>
+        <div class="formControls col-2">
+            @*@Html.DropDownList("communityIds", new SelectList(Model.CommunityIds, nameof(CommunityDTO.Id),
+                nameof(CommunityDTO.Name)))*@
+            <select name="communityId" id="communityId">
+              
+
+            </select>
+        </div>
+
+
+
+
+        <label class="form-label col-2 "><span class="c-red">*</span>房型：</label>
+        <div class="formControls col-2">
+            @Html.DropDownList("roomTypeId", new SelectList(Model.RoomTypes, nameof(IdNameDTO.Id),
+              nameof(IdNameDTO.Name),Model.House.RoomTypeId))
+        </div>
+
+
+    </div>
+
+
+    <div class="row cl ">
+
+
+        <label class="form-label col-2"><span class="c-red">*</span>地址：</label>
+        <div class="formControls col-6">
+            <input type="text" class="input-text"
+                  value="@Model.House.Address"  placeholder="" name="address" id="address" datatype="*2-50" nullmsg="请输入地址"><span id="" style="display:none;"></span>
+        </div>
+
+
+
+        <label class="form-label col-2"><span class="c-red">*</span>月租金：</label>
+        <div class="formControls col-2">
+            <input type="text"  value="@Model.House.MonthRent"
+                   class="input-text" placeholder="" name="monthRent" id="email" datatype="n" nullmsg="请输入金额" style="width:195px;"><span id="" style="display:inline-block">元</span>
+        </div>
+      
+
+    </div>
+
+
+    <div class="row cl ">
+            <label class="form-label col-2 "><span class="c-red">*</span>状态：</label>
+            <div class="formControls col-2">
+                @Html.DropDownList("houseStateId", new SelectList(Model.HouseStates, nameof(IdNameDTO.Id),
+                  nameof(IdNameDTO.Name),Model.House.StatusId))
+            </div>
+
+            <label class="form-label col-2 "><span class="c-red">*</span>面积：</label>
+            <div class="formControls col-2">
+                <input type="text" value="@Model.House.Area" class="input-text" placeholder="" name="area" id="area" datatype="*1-5" nullmsg="请输入面积" style="width:185px;"><span id="" style="display:inline-block">平米</span>
+            </div>
+        
+
+            <label class="form-label col-2 "><span class="c-red">*</span>装修：</label>
+            <div class="formControls col-2">
+                @Html.DropDownList("houseDecorationId", new SelectList(Model.DecorateStates, nameof(IdNameDTO.Id),
+                  nameof(IdNameDTO.Name),Model.House.DecorateStatusId))
+            </div>
+    </div>
+
+
+    <div class="row cl">
+
+        <label class="form-label col-2 "><span class="c-red">*</span>楼层：</label>
+        <div class="formControls col-1">
+            <input type="text" class="input-text" placeholder="" name="floorIndex" id="floorIndex" datatype="n" value="@Model.House.FloorIndex"
+                    nullmsg="楼层"><span id="" style="display:none;"></span>
+        </div>
+        <div class="formControls col-1">
+            <input type="text" class="input-text" placeholder="" value="@Model.House.TotalFloorCount"
+                    name="totalFloor" id="totalFloor" datatype="n" nullmsg="总层"><span id="" style="display:none;"></span>
+        </div>
+
+        <label class="form-label col-2 "><span class="c-red">*</span>朝向：</label>
+        <div class="formControls col-2">
+            <input type="text" class="input-text" placeholder="" name="direction"  value="@Model.House.Direction"
+                   id="direction" datatype="*1-10" nullmsg="楼层"><span id="" style="display:none;"></span>
+        </div>
+
+        <label class="form-label col-2 "><span class="c-red">*</span>可看房时间：</label>
+        <div class="formControls col-2">
+            @*<input type="text" class="input-text" placeholder="" name="lookableDateTime" id="lookableDateTime" datatype="n" ><span id="" style="display:none;"></span>*@
+            <input type="text" id="datemin" name="lookableDateTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"  value="@Model.House.LookableDateTime"
+                   class="input-text " >
+        </div>
+
+    </div>
+
+    <div class="row cl">
+
+        <label class="form-label col-2 "><span class="c-red">*</span>入住时间：</label>
+        <div class="formControls col-2">
+            @*<input type="text" class="input-text" placeholder="" name="checkInDateTime" id="checkInDateTime" datatype="*1-10" ><span id="" style="display:none;"></span>*@
+
+            <input type="text" name="checkInDateTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})"  id="datemax" value="@Model.House.CheckInDateTime"
+                   class="input-text " >
+
+        </div>
+
+
+        <label class="form-label col-2 "><span class="c-red">*</span>业主姓名：</label>
+        <div class="formControls col-2">
+            <input type="text" class="input-text" placeholder="" name="ownerName"  value="@Model.House.OwnerName"
+                   id="ownerName" datatype="*1-10"><span id="" style="display:none;"></span>
+        </div>
+
+        <label class="form-label col-2 "><span class="c-red">*</span>业主电话：</label>
+        <div class="formControls col-2">
+            <input type="text" class="input-text" placeholder="" value="@Model.House.OwnerPhoneNum"
+                    name="ownerPhoneNum" id="ownerPhoneNum" datatype="m" nullmsg="楼层"><span id="" style="display:none;"></span>
+        </div>
+
+    </div>
+
+    <div class="row cl  ">
+        <label class="form-label col-2 "><span class="c-red">*</span>房源描述：</label>
+        <div class="formControls col-10">
+            @*<textarea id="description"  name="description" >@Model.House.Description</textarea>*@
+             <script id="editor" name="description" type="text/plain" style=" width:1115px;"></script>
+        </div>
+    </div>
+
+    <div class="row cl ">
+        <label class="form-label col-2"><span class="c-red">*</span>配套设施：</label>
+        @foreach (var item in Model.Attachments)
+        {
+            <div class="formControls col-md-1">
+                <input type="checkbox" id="attachmentIds_@item.Id" name="attachmentIds" checked="@Model.House.AttachmentIds.Contains(item.Id)" 
+                       value="@item.Id" />
+                <label for="attachmentIds_@item.Id">@item.Name</label>
+
+            </div>
+        }
+
+    </div>
+    <div class="row cl col-md-offset-6">
+        <input type="button" value="保存" id="btnSave" />
+    </div>
+</form>
+
+@section FootScript{
+
+    <script type="text/javascript">
+        //富文本初始化
+        var ue = UE.getEditor('editor');
+
+
+
+        $(function () {
+
+            $("#btnSave").click(function () {
+                var formValid = $("#EditForm").Validform({ tiptype: 2 });
+                if(formValid.check(false))
+                {
+                    saveAjax();
+                }
+            });
+
+            $('#editor').html('@Model.House.Description');
+
+            $("#regionId").change(function () {
+
+                $.ajax({
+                    url: "/House/LoadCommunities",
+                    data: {regionId:$(this).val()},
+                    dataType: "json",
+                    type: "post",
+                    success:function(res)
+                    {
+                        if(res.status=="ok")
+                        {
+                            loadCommunities(res.data);
+                        }
+                    },
+                    error:function(){
+
+                        alert("加载小区出错");
+                    }
+                });
+
+            });
+
+            //页面绑定数据的时候，并且选中小区，触发了变更事件，调用变更事件来绑定小区
+            $("#regionId").change();
+
+        });
+
+        function saveAjax()
+        {
+            var formdata = $("#EditForm").serializeArray();
+            $.ajax({
+                url: "/House/Edit",
+                data: formdata,
+                type: "post",
+                dataType: "json",
+                success: function (res)
+                {
+                    if(res.status=="ok")
+                    {
+                        parent.location.reload();
+                    }
+                    else if(res.status=="error")
+                    {
+                        layer.msg(res.errorMsg, { icon: 1, time: 3000 });
+                    }
+
+                },
+                error: function () {
+
+                    alert("服务器请求出错");
+                }
+
+
+
+
+
+            })
+
+
+
+        }
+
+
+        function loadCommunities(data)
+        {
+            //先清空小区下拉
+            $("#communityId").empty();
+            for (var i = 0; i < data.length;i++)
+            {
+                var item = data[i];
+                if (item.id == '@Model.House.CommunityId') {
+                    $("#communityId").append("<option value='" + item.id + "'selected='selected'>" + item.name + "</option>");
+                }
+                else {
+                    $("#communityId").append("<option value='" + item.id  + "'>" + item.name + "</option>");
+                }
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+}
+

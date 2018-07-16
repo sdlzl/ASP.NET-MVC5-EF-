@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="FormAdd">
+    名称:<input type="text" id="name" name="name" value="" />
+    描述:<input type="text" id="descript" name="descript" value=""/>         
+    <input type="button" id="btn_Save" value="保存" />    
+</form>
+
+@section  FootScript
+{
+     <script  type="text/javascript">
+
+         $(function () {
+            
+             $("#btn_Save").click(function()
+             {
+                 var name = $("#name").val();
+                 var desc = $("#descript").val();
+                 $.ajax({
+                     url: "/Permission/Add",
+                     dataType: "json",
+                     type: "post",
+                     data: { name: name, descript: desc },
+                     success: function (res) {
+                         if (res.status == "ok") {
+                             layer.msg('新增成功 ', { icon: 1, time: 1000 });
+                             parent.location.reload();
+                         }
+                     },
+                     error: function () {
+
+
+                     }
+
+
+
+                 })
+             
+             
+             
+             
+             });
+             
+
+
+
+
+
+         });
+
+
+     </script>   
+        
+}
+

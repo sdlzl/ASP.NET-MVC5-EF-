@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="template-web.js"></script>
+    <script id="t1"  type="text/html">
+        <thead>{{author}}</thead>
+        {{each list as item}}
+        <td>{{item}}</td>
+        {{/each}}
+
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var data = {
+                author: '宫崎骏',
+                list: ['千与千寻', '哈尔的移动城堡', '幽灵公主', '风之谷', '龙猫']
+
+            };
+
+            var html = template("t1", data);
+            document.getElementById("temp").innerHTML = html;
+
+
+
+        })
+
+
+    </script>
+</head>
+<body>
+
+    <table id="temp">
+
+
+    </table>
+
+</body>
+</html>

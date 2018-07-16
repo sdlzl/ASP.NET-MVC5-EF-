@@ -1,0 +1,145 @@
+﻿@model ZSZ.AdminWeb.Models.AdminUserEditGetModel
+@{
+    ViewBag.Title = "编辑管理员";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pd-20">
+    <form class="form form-horizontal" id="FormAdminUserAdd">
+        <input  type="hidden" id="id" name="id" value="@Model.AdminUser.Id"/>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>管理员：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.AdminUser.Name" placeholder="" id="user-name" name="name" datatype="*2-16" nullmsg="用户名不能为空">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>初始密码：</label>
+            <div class="formControls col-5">
+                <input type="password" name="password" placeholder="留空为不修改密码" autocomplete="off" value="" class="input-text" datatype="*0-20" >
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>确认密码：</label>
+            <div class="formControls col-5">
+                <input type="password" placeholder="留空为不修改密码" autocomplete="off" class="input-text Validform_error"  errormsg="您两次输入的新密码不一致！" datatype="*0-20" nullmsg="请再输入一次新密码！" recheck="password" id="newpassword2" name="password2">
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>手机：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.AdminUser.PhoneNum" placeholder="" bl id="phoneNum" name="phoneNum" datatype="m" nullmsg="手机不能为空"><span id="phoneNumSpan" style="display:none"></span>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3"><span class="c-red">*</span>邮箱：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="@Model.AdminUser.Email" placeholder="" name="email" id="email" datatype="e" nullmsg="请输入邮箱！"><span id="" style="display:none"></span>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-3">城市：</label>
+            <div class="formControls col-5">
+                <div class="formControls col-5">
+                    @Html.DropDownList("cityIds", new SelectList(Model.AllCities, nameof(CityDTO.Id),
+              nameof(CityDTO.Name),Model.AdminUser.CityId))
+                </div>
+            </div>
+        </div>
+        @*<div class="row cl">
+            <label class="form-label col-3">城市：</label>
+            <div class="formControls col-5">
+                <span class="select-box" style="width:150px;">
+                   @Html.DropDownList("cityIds",)
+                </span>
+            </div>
+        </div>*@
+
+
+        <div class="row cl">
+            @foreach (var perm in Model.AllRoles)
+            {
+                <div class="col-xs-12 col-sm-3">
+                    <input type="checkbox" name="roleIds" id="@perm.Id" value="@perm.Id" checked="@Model.AdminUserRoles.Select(e=>e.Id).Contains(perm.Id)" />
+                    <label for="@perm.Id">@perm.Name</label>
+
+                </div>
+            }
+        </div>
+
+        <div class="row cl">
+            <div class="col-9 col-offset-3">
+                <input class="btn btn-primary radius" type="button" id="btn_Save" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+@section FootScript{
+
+
+    <script type="text/javascript">
+        $(function(){
+
+
+            $("#btn_Save").click(function () {
+                var formValid = $("#FormAdminUserAdd").Validform({ tiptype: 2 });
+                if (formValid.check(false)) {
+                    saveAjax();
+
+                }
+            });
+
+
+            });
+
+
+
+
+
+
+
+            function saveAjax()
+            {
+                var FormData = $("#FormAdminUserAdd").serializeArray();
+                $.ajax({
+                    type: "post",
+                    dataType: "json",
+                    data: FormData,
+                    url: "/AdminUser/Edit",
+                    success: function (res)
+                    {
+                        if (res.status == "ok") {
+                            parent.location.reload();
+                        }
+                        else {
+
+                            alert(res.status);
+                        }
+
+                    },
+                    error: function ()
+                    {
+                        alert('服务器请求出错');
+
+                    }
+                });
+
+            }
+
+
+
+    </script>
+
+
+
+
+
+}

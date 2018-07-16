@@ -1,0 +1,91 @@
+﻿@model ZSZ.DTO.PermissionDTO[]
+
+@{
+    ViewBag.Title = "新增角色";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="FormAdd">
+    <div class="row cl">
+        <label class="form-label col-3"><span class="c-red">*</span>角色:</label>
+        <div class="formControls col-5">
+            <input type="text" class="input-text" value="" placeholder="" id="name" name="name" datatype="*" nullmsg="用户名不能为空">
+        </div>
+        <div class="col-4"> </div>
+    </div>
+    @*角色名称:<input type="text"  name="name" id="name" />*@
+    拥有权限:
+       
+        
+
+        <div class="row cl">
+           @foreach (var perm in Model)
+           {
+            <div class="col-xs-12 col-sm-3">
+               
+              
+                    <input type="checkbox" name="PermissionIds" id="@perm.Id" value="@perm.Id"  />
+                    <label for="@perm.Id" >@perm.Name</label>
+             
+            </div>
+            
+            }
+        </div>
+
+   
+    <input type="button" id="btn_Save" value="保存" />
+</form>
+
+@section  FootScript
+{
+    <script type="text/javascript">
+
+         $(function () {
+             //判断验证是否通过
+             var validForm = $("#FormAdd").Validform({ tiptype: 2 });
+             $("#btn_Save").click(function ()
+             {
+                 if(validForm.check(false))
+                 {
+                     saveAjax();
+                 }
+
+             });
+
+         });
+
+         var saveAjax = function ()
+         {
+
+             var Formdata = $("#FormAdd").serializeArray();
+             $.ajax({
+                 url: "/Role/Add",
+                 dataType: "json",
+                 type: "post",
+                 data: Formdata,
+                 success: function (res) {
+                     if (res.status == "ok") {
+                         layer.msg('新增成功 ', { icon: 1, time: 1000 });
+                         parent.location.reload();
+                     }
+                 },
+                 error: function () {
+
+                     layer.msg('新增失败 ', { icon: 1, time: 1000 });
+                 }
+
+
+
+             })
+
+
+         }
+       
+
+    </script>
+
+}
+
+
+
+

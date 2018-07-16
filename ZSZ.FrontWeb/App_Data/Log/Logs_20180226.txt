@@ -1,0 +1,297 @@
+2018-02-26 21:00:06,150 [6] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.FrontWeb.Controllers.MainController.AddCity() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.FrontWeb\Controllers\MainController.cs:行号 22
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-02-26 21:02:31,261 [7] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.FrontWeb.Controllers.MainController.AddCity() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.FrontWeb\Controllers\MainController.cs:行号 22
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-02-26 21:09:57,194 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.FrontWeb.Controllers.MainController.AddCity() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.FrontWeb\Controllers\MainController.cs:行号 22
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-02-26 21:26:06,221 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Failed to open connection at 2018/2/26 星期一 下午 9:26:06 +08:00 with error: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+
+2018-02-26 21:29:56,518 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Failed to open connection at 2018/2/26 星期一 下午 9:29:56 +08:00 with error: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+
+2018-02-26 21:30:03,215 [8] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 ZSZService.CityService.AddCity(String CityName) 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZService\CityService.cs:行号 17
+   在 ZSZ.FrontWeb.Controllers.MainController.AddCity() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.FrontWeb\Controllers\MainController.cs:行号 22
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-02-26 21:32:11,241 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 9:32:11 +08:00
+
+2018-02-26 21:32:11,967 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE [Extent1].[Name] = @p__linq__0
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2018-02-26 21:32:11,967 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 21:32:11,968 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '佛山' (Type = String, Size = 4000)
+
+2018-02-26 21:32:11,968 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 9:32:11 +08:00
+
+2018-02-26 21:32:12,068 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 98 ms with result: SqlDataReader
+
+2018-02-26 21:32:12,068 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 21:32:12,073 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 21:32:12,164 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 21:32:12,167 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Started transaction at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:INSERT [dbo].[T_Cities]([Name], [CreateDateTime], [IsDeleted])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[T_Cities]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @0: '佛山' (Type = String, Size = 20)
+
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @1: '2018/2/26 星期一 下午 9:32:12' (Type = DateTime2)
+
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @2: 'False' (Type = Boolean)
+
+2018-02-26 21:32:12,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 21:32:12,417 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 169 ms with result: SqlDataReader
+
+2018-02-26 21:32:12,417 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 21:32:12,431 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Committed transaction at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 21:32:12,431 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 9:32:12 +08:00
+
+2018-02-26 22:07:44,097 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 10:07:44 +08:00
+
+2018-02-26 22:07:44,799 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE [Extent1].[Name] = @p__linq__0
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2018-02-26 22:07:44,799 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:07:44,800 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '佛山' (Type = String, Size = 4000)
+
+2018-02-26 22:07:44,800 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 10:07:44 +08:00
+
+2018-02-26 22:07:44,814 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 11 ms with result: SqlDataReader
+
+2018-02-26 22:07:44,814 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:07:44,818 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 10:07:44 +08:00
+
+2018-02-26 22:07:49,422 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.Exception: 城市已经存在
+   在 ZSZService.CityService.AddCity(String CityName) 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZService\CityService.cs:行号 20
+   在 ZSZ.FrontWeb.Controllers.MainController.AddCity() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.FrontWeb\Controllers\MainController.cs:行号 22
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-02-26 22:08:28,647 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 10:08:28 +08:00
+
+2018-02-26 22:08:29,361 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE [Extent1].[Name] = @p__linq__0
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2018-02-26 22:08:29,363 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:08:29,364 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '佛山2' (Type = String, Size = 4000)
+
+2018-02-26 22:08:29,364 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,376 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 10 ms with result: SqlDataReader
+
+2018-02-26 22:08:29,376 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:08:29,382 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,502 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,508 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Started transaction at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:INSERT [dbo].[T_Cities]([Name], [CreateDateTime], [IsDeleted])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[T_Cities]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @0: '佛山2' (Type = String, Size = 20)
+
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @1: '2018/2/26 星期一 下午 10:08:29' (Type = DateTime2)
+
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @2: 'False' (Type = Boolean)
+
+2018-02-26 22:08:29,592 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,604 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 11 ms with result: SqlDataReader
+
+2018-02-26 22:08:29,604 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:08:29,616 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Committed transaction at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:08:29,617 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 10:08:29 +08:00
+
+2018-02-26 22:10:52,325 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 10:10:52 +08:00
+
+2018-02-26 22:10:53,051 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    CASE WHEN ( EXISTS (SELECT 
+        1 AS [C1]
+        FROM [dbo].[T_Cities] AS [Extent1]
+        WHERE [Extent1].[Name] = @p__linq__0
+    )) THEN cast(1 as bit) ELSE cast(0 as bit) END AS [C1]
+    FROM  ( SELECT 1 AS X ) AS [SingleRowTable1]
+2018-02-26 22:10:53,051 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:10:53,052 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '佛山5' (Type = String, Size = 4000)
+
+2018-02-26 22:10:53,052 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,063 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 9 ms with result: SqlDataReader
+
+2018-02-26 22:10:53,063 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:10:53,069 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,164 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,167 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Started transaction at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:INSERT [dbo].[T_Cities]([Name], [CreateDateTime], [IsDeleted])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[T_Cities]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @0: '佛山5' (Type = String, Size = 20)
+
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @1: '2018/2/26 星期一 下午 10:10:53' (Type = DateTime2)
+
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- @2: 'False' (Type = Boolean)
+
+2018-02-26 22:10:53,246 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,247 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-02-26 22:10:53,247 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-02-26 22:10:53,259 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Committed transaction at 2018/2/26 星期一 下午 10:10:53 +08:00
+
+2018-02-26 22:10:53,260 [5] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/2/26 星期一 下午 10:10:53 +08:00
+

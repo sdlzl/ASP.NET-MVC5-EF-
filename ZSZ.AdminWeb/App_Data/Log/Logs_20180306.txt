@@ -1,0 +1,40 @@
+2018-03-06 23:16:56,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/6 星期二 下午 11:16:56 +08:00
+
+2018-03-06 23:16:58,013 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-06 23:16:58,014 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-06 23:16:58,014 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/6 星期二 下午 11:16:58 +08:00
+
+2018-03-06 23:16:58,059 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 42 ms with result: SqlDataReader
+
+2018-03-06 23:16:58,059 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-06 23:16:58,094 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/6 星期二 下午 11:16:58 +08:00
+
+2018-03-06 23:27:28,975 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/6 星期二 下午 11:27:28 +08:00
+
+2018-03-06 23:27:28,976 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Description] AS [Description], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Permissions] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-06 23:27:28,976 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-06 23:27:28,976 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/6 星期二 下午 11:27:28 +08:00
+
+2018-03-06 23:27:28,978 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-06 23:27:28,978 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-06 23:27:28,978 [22] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/6 星期二 下午 11:27:28 +08:00
+

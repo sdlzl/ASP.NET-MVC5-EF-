@@ -1,0 +1,178 @@
+﻿@model ZSZ.DTO.HouseDTO[]
+@{
+    ViewBag.Title = "HouseList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    
+    div li {
+        float:left;
+        text-align:center;
+    }
+   
+div.green-black{padding:3px;margin:3px;text-align:center;} 
+div.green-black a{border:#2c2c2c 1px solid;padding:2px 5px;background:url(../images/image1.gif) #2c2c2c;color:#fff;margin:0 2px 0 0;text-decoration:none;} 
+div.green-black a:hover{border:#aad83e 1px solid;background:url(../images/image2.gif) #aad83e;color:#fff;} 
+div.green-black a:active{border:#aad83e 1px solid;background:url(../images/image2.gif) #aad83e;color:#fff;} 
+div.green-black span.current{border:#aad83e 1px solid;padding:2px 5px;font-weight:bold;background:url(../images/image2.gif) #aad83e;color:#fff;margin:0 2px 0 0;} 
+div.green-black span.disabled{border:#f3f3f3 1px solid;padding:2px 5px;color:#ccc;margin:0 2px 0 0;}
+   
+</style>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 房源管理 <span class="c-gray en">&gt;</span> 房源列表 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+    <div class="text-c">
+        日期范围：
+        <input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:120px;">
+        -
+        <input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d'})" id="datemax" class="input-text Wdate" style="width:120px;">
+
+        <input type="text" class="input-text" style="width:250px" placeholder="输入房源名称" id="" name="">
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜房源</button>
+    </div>
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+
+        <span class="l"><a href="javascript:;" onclick="layer_show('添加房源', '/House/Add', '600', '600');" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加管理员</a></span>
+        <a href="javascript:;" onclick="batch_del()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+        <span class="r">共有数据：<strong>@Model.Length</strong> 条</span>
+    </div>
+    <form id="FormList">
+        <table class="table table-border table-bordered table-bg">
+            <thead>
+                <tr>
+                    <th scope="col" colspan="9">房源</th>
+                </tr>
+                <tr class="text-c">
+                    <th width="25"><input type="checkbox" name="" value=""></th>
+                    <th width="50">区域</th>
+                    <th width="90">小区名</th>
+                    <th width="150">地段</th>
+                    <th>租金</th>
+                    <th width="150">房型</th>
+                    <th width="100">平米</th>
+                    <th width="100">是否精装</th>
+                    <th width="100">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="text-c">
+                        <td><input type="checkbox" value="@item.Id" name="houseIds"></td>
+                        <td>@item.RegionName</td>
+                        <td>@item.CommunityName</td>
+                        <td>@item.CommunityLocation</td>
+                        <td>@item.MonthRent</td>
+                        <td>@item.RoomTypeName </td>
+                        <td>@item.Area</td>
+                        <td>@item.DecorateStatusName</td>
+                        <td class="td-manage">
+                            <a title="编辑" href="javascript:;" onclick="layer_show('编辑房源', '/House/Edit/@item.Id', '600', '600');" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            <a title="删除" href="javascript:;" onclick="admin_del(this,@item.Id)" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                            <a title="上传图片" href="javascript:;" onclick="layer_show('上传图片', '/House/PicUpload?houseId=@item.Id', '900', '700');" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            <a title="查看图片" href="javascript:;" onclick="layer_show('查看图片', '/House/PicList?houseId=@item.Id', '900', '700');" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </form>
+    <div class="green-black ">
+        @{
+            var pager = new ZSZ.CommonMVC.MyPager();
+            pager.MaxPageCount = (int)10;
+            pager.PageSize = (int)10;
+            pager.PageIndex = (int)ViewBag.pageIndex;
+            pager.TotalCount = (int)ViewBag.totalCount;
+            pager.UrlPattern = "/House/List?typeId=" + ViewBag.typeId + "&pageIndex={pn}";
+        }
+        @Html.Raw(pager.GetPageHtml())
+
+
+    </div>
+  
+</div>
+
+@section FootScript{
+
+    <script type="text/javascript">
+        $(function () {
+
+        });
+
+        function admin_del(obj, id) {
+            layer.confirm('确认要删除吗？', function (index) {
+
+                $.ajax({
+                    url: "/House/Delete/" + id,
+                    dataType: "json",
+                    type: "post",
+                    success: function (res) {
+                        if (res.status == "ok") {
+                            $(obj).parents("tr").remove();
+                            location.reload();
+                            layer.msg('删除成功', { icon: 1, time: 1000 });
+                        }
+                        else if(res.status=="redirect")
+                        {
+                            layer.msg('请先登录', { icon: 1, time: 1000 });
+                            location.href=res.data;
+                        }
+                        else if(res.status=="error")
+                        {
+                            alert(res.errorMsg);
+                        }
+                    },
+                    error: function () {
+                        layer.msg('服务请求失败', { icon: 1, time: 1000 });
+                    }
+                });
+            });
+
+        }
+
+
+        function batch_del() {
+            layer.confirm('确认要删除吗？', function (index) {
+                //此处请求后台程序，下方是成功后的前台处理……
+                var FormData = $("#FormList").serializeArray();
+                $.ajax({
+                    url: "/House/BatchDel/",
+                    type: "post",
+                    dataType: "json",
+                    data: FormData,
+                    success: function (res) {
+                        if (res.status == "ok") {
+
+                            location.reload();
+                        }
+                        else if(res.status=="error")
+                        {
+                            alert(res.errorMsg);
+                        }
+                    }
+                    ,
+                    error: function () {
+                        layer.msg('服务请求失败', { icon: 1, time: 1000 });
+                    }
+
+                });
+
+
+
+            });
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+}

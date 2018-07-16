@@ -1,0 +1,3309 @@
+2018-03-23 09:30:55,177 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.AdminWeb.Controllers.HouseController.Add() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.AdminWeb\Controllers\HouseController.cs:行号 29
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 09:30:55,222 [11] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ZSZ.AdminWeb.Controllers.HouseController.Add() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.AdminWeb\Controllers\HouseController.cs:行号 29
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 09:31:18,431 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:18 +08:00
+
+2018-03-23 09:31:19,402 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT TOP (2) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[PhoneNum] AS [PhoneNum], 
+    [Extent1].[PasswordHash] AS [PasswordHash], 
+    [Extent1].[PasswordSalt] AS [PasswordSalt], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_AdminUsers] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[PhoneNum] = @p__linq__0)
+2018-03-23 09:31:19,402 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,403 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '18520460757' (Type = AnsiString, Size = 8000)
+
+2018-03-23 09:31:19,403 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,435 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 29 ms with result: SqlDataReader
+
+2018-03-23 09:31:19,435 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,494 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,509 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,600 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[T_AdminUsers] AS [Extent1]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[PhoneNum] = @p__linq__0)
+    )  AS [GroupBy1]
+2018-03-23 09:31:19,600 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,600 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '18520460757' (Type = AnsiString, Size = 8000)
+
+2018-03-23 09:31:19,600 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,603 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 09:31:19,603 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,606 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,607 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,704 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[PhoneNum] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 09:31:19,704 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,704 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '18520460757' (Type = AnsiString, Size = 8000)
+
+2018-03-23 09:31:19,704 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:19,723 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 18 ms with result: SqlDataReader
+
+2018-03-23 09:31:19,723 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:19,753 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:19 +08:00
+
+2018-03-23 09:31:26,740 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,743 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 09:31:26,744 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:26,744 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:31:26,744 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,748 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 09:31:26,748 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:26,748 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,751 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,774 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 09:31:26,774 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:26,774 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:31:26,774 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,830 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 55 ms with result: SqlDataReader
+
+2018-03-23 09:31:26,830 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:31:26,830 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,833 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:31:26,834 [14] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:31:26 +08:00
+
+2018-03-23 09:32:22,169 [14] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.NotSupportedException: LINQ to Entities does not recognize the method 'ZSZ.DTO.IdNameDTO ToDTO(ZSZ.Service.Entities.IdNameEntity)' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SelectTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   在 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   在 ZSZ.Service.IdNameService.GetByTypeName(String typeName) 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZService\IdNameService.cs:行号 66
+   在 ZSZ.AdminWeb.Controllers.HouseController.Add() 位置 d:\我的文档\visual studio 2015\Projects\xiangmu\ZSZ.AdminWeb\Controllers\HouseController.cs:行号 40
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 09:33:28,100 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:28 +08:00
+
+2018-03-23 09:33:29,100 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 09:33:29,100 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,101 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:33:29,102 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,105 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,105 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,162 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,168 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,195 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 09:33:29,195 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,195 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:33:29,195 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,196 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,197 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,197 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,199 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,209 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:33:29,209 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,209 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房型' (Type = String, Size = 4000)
+
+2018-03-23 09:33:29,209 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,214 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,214 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,239 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,241 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,242 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:33:29,242 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,242 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 09:33:29,242 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,243 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,243 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,244 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,245 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,245 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:33:29,245 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,245 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 09:33:29,245 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,246 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,247 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,249 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,261 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 09:33:29,261 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,261 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:33:29,265 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 09:33:29,265 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:33:29,265 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:33:29 +08:00
+
+2018-03-23 09:37:52,780 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,780 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 09:37:52,780 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,780 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:37:52,780 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,783 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,784 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,784 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,784 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,785 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 09:37:52,785 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,785 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 09:37:52,785 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,791 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,791 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,809 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,811 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,811 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:37:52,811 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,811 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房型' (Type = String, Size = 4000)
+
+2018-03-23 09:37:52,811 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,813 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,813 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,813 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,814 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,814 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:37:52,814 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,814 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 09:37:52,814 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,826 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 12 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,826 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,826 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,827 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,828 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 09:37:52,828 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,828 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 09:37:52,828 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,832 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,832 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,832 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,833 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,833 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 09:37:52,833 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,833 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 09:37:52,835 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 09:37:52,835 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 09:37:52,835 [19] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 9:37:52 +08:00
+
+2018-03-23 10:20:15,320 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:15 +08:00
+
+2018-03-23 10:20:16,380 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:20:16,380 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,381 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:20:16,381 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,386 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,386 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,450 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,459 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,491 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:20:16,491 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,491 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:20:16,491 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,493 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,494 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,529 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,532 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,541 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:20:16,541 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,541 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:20:16,541 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,543 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,543 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,544 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,546 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,547 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:20:16,547 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,547 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:20:16,547 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,550 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,550 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,550 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,551 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,551 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:20:16,551 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,551 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:20:16,551 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,554 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,554 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,554 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,555 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,555 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:20:16,555 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,555 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:20:16,555 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,557 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,557 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,557 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,559 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,594 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:20:16,594 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,594 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:20:16,597 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:20:16,597 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:20:16,597 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:20:16 +08:00
+
+2018-03-23 10:27:48,734 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:48 +08:00
+
+2018-03-23 10:27:49,858 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:27:49,858 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,859 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:27:49,859 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,863 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:27:49,863 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,904 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,911 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,936 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:27:49,936 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,936 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:27:49,936 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,937 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:27:49,937 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,977 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,979 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,989 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:27:49,989 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,989 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:27:49,989 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:49,997 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 8 ms with result: SqlDataReader
+
+2018-03-23 10:27:49,997 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:49,999 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:49 +08:00
+
+2018-03-23 10:27:50,000 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,000 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:27:50,000 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,000 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:27:50,000 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,002 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:27:50,002 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,002 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,005 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,005 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:27:50,005 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,005 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:27:50,005 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,006 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:27:50,006 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,007 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,008 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,008 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:27:50,008 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,008 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:27:50,008 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,012 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 10:27:50,012 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,012 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,015 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,030 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:27:50,030 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,030 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:27:50,038 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 8 ms with result: SqlDataReader
+
+2018-03-23 10:27:50,038 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:27:50,039 [11] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:27:50 +08:00
+
+2018-03-23 10:54:39,336 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:39 +08:00
+
+2018-03-23 10:54:40,299 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:54:40,299 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,300 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:54:40,300 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,304 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,304 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,354 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,360 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,395 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:54:40,395 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,395 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:54:40,396 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,405 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 9 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,405 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,444 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,447 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,455 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:54:40,455 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,455 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:54:40,456 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,461 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,461 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,462 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,463 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,464 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:54:40,464 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,464 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:54:40,464 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,465 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,465 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,465 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,466 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,466 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:54:40,466 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,466 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:54:40,466 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,467 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,467 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,468 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,468 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,468 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:54:40,468 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,468 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:54:40,469 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,476 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 7 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,476 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,476 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,478 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,487 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:54:40,487 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,487 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:54:40,489 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:54:40,489 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:54:40,489 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:54:40 +08:00
+
+2018-03-23 10:56:37,943 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,943 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:56:37,943 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,943 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:56:37,944 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,948 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,948 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,948 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,949 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,949 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:56:37,949 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,949 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:56:37,949 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,951 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,951 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,951 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,952 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,952 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:56:37,952 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,952 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:56:37,952 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,957 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,957 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,957 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,958 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,958 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:56:37,958 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,958 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:56:37,958 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,967 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 8 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,967 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,967 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,967 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,968 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:56:37,968 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,968 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:56:37,968 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,970 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,970 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,970 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,972 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,972 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:56:37,972 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,972 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:56:37,972 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,975 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,975 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,975 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,976 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,976 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:56:37,976 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,976 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:56:37,979 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 10:56:37,979 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:56:37,979 [12] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:56:37 +08:00
+
+2018-03-23 10:57:32,254 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,254 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:57:32,255 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,255 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:57:32,255 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,265 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 10 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,265 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,265 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,266 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,266 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:57:32,266 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,266 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:57:32,266 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,268 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,268 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,268 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,268 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,269 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:57:32,269 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,269 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:57:32,269 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,270 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,270 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,270 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,271 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,271 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:57:32,271 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,271 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:57:32,271 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,272 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,272 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,272 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,273 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,273 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:57:32,273 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,273 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:57:32,273 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,275 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,275 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,275 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,276 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,276 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:57:32,276 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,276 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:57:32,276 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,278 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,278 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,278 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,279 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,279 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:57:32,279 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,279 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:32,287 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 7 ms with result: SqlDataReader
+
+2018-03-23 10:57:32,287 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:57:32,287 [7] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:57:32 +08:00
+
+2018-03-23 10:57:41,744 [15] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 10:58:52,849 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,849 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 10:58:52,849 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,849 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:58:52,849 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,868 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 18 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,868 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,868 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,869 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,869 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 10:58:52,869 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,869 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 10:58:52,869 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,875 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,875 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,876 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,877 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,877 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:58:52,877 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,877 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 10:58:52,877 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,884 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 7 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,885 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,885 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,886 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,886 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:58:52,886 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,886 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 10:58:52,886 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,893 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,893 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,893 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,893 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,894 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:58:52,894 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,894 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 10:58:52,894 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,895 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,895 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,895 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,896 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,896 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 10:58:52,896 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,896 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 10:58:52,896 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,898 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,898 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,898 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,899 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,899 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 10:58:52,899 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,899 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:58:52,901 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 10:58:52,901 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 10:58:52,901 [15] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 10:58:52 +08:00
+
+2018-03-23 10:59:01,435 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:02:32,778 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:32 +08:00
+
+2018-03-23 11:02:33,853 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:02:33,853 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:33,854 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:02:33,855 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:33 +08:00
+
+2018-03-23 11:02:33,860 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:02:33,861 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:33,925 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:33 +08:00
+
+2018-03-23 11:02:33,936 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:33 +08:00
+
+2018-03-23 11:02:33,966 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:02:33,966 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:33,966 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:02:33,966 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:33 +08:00
+
+2018-03-23 11:02:33,968 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:02:33,968 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,009 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,014 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,026 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:02:34,026 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,026 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:02:34,026 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,028 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:02:34,028 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,029 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,030 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,033 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:02:34,033 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,033 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:02:34,033 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,038 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:02:34,038 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,038 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,041 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,042 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:02:34,042 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,042 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:02:34,042 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,046 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:02:34,046 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,047 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,047 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,048 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:02:34,048 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,048 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:02:34,048 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,051 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:02:34,051 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,051 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,053 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,064 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:02:34,064 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,064 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:34,066 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:02:34,066 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:02:34,067 [8] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:02:34 +08:00
+
+2018-03-23 11:02:47,734 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:02:50,357 [7] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:02:55,356 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:02:57,336 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:03:12,771 [8] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:03:59,388 [9] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:05:02,336 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,337 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:05:02,337 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,337 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:05:02,337 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,341 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,341 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,342 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,342 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,343 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:05:02,343 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,343 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:05:02,343 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,348 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,348 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,348 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,349 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,349 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:05:02,349 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,349 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:05:02,349 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,357 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 7 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,357 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,357 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,358 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,358 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:05:02,358 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,358 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:05:02,358 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,361 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,361 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,361 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,362 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,362 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:05:02,362 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,362 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:05:02,362 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,364 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,364 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,364 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,365 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,365 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:05:02,365 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,365 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:05:02,365 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,366 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,366 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,367 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,368 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,368 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:05:02,368 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,368 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:02,370 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:05:02,370 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:05:02,370 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:05:02 +08:00
+
+2018-03-23 11:05:10,195 [13] ERROR ZSZ.FrontWeb.App_Start.ZSZExceptionFilter - 出现未处理异常System.ArgumentException: 对于“ZSZ.AdminWeb.Controllers.HouseController”中方法“System.Web.Mvc.ActionResult LoadCommunities(Int64)”的不可以为 null 的类型“System.Int64”的参数“regionId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-03-23 11:09:03,713 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,714 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:09:03,714 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,714 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:09:03,714 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,728 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 14 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,728 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,728 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,729 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,729 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:09:03,729 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,729 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:09:03,729 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,744 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 15 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,744 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,744 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,745 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,746 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:09:03,746 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,746 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:09:03,746 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,751 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,751 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,751 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,751 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,752 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:09:03,752 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,752 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:09:03,752 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,754 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,754 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,754 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,754 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,755 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:09:03,755 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,755 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:09:03,755 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,763 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 8 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,763 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,764 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,766 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,766 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:09:03,766 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,766 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:09:03,766 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,769 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,769 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,769 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,770 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,770 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:09:03,770 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,770 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:03,776 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 11:09:03,776 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:03,776 [24] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:03 +08:00
+
+2018-03-23 11:09:31,520 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:31 +08:00
+
+2018-03-23 11:09:31,541 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:09:31,541 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:31,541 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:09:31,541 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:31 +08:00
+
+2018-03-23 11:09:31,599 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 58 ms with result: SqlDataReader
+
+2018-03-23 11:09:31,599 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:31,601 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:31 +08:00
+
+2018-03-23 11:09:44,542 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:09:44 +08:00
+
+2018-03-23 11:09:44,544 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:09:44,544 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:44,544 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:09:44,544 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:09:44 +08:00
+
+2018-03-23 11:09:44,552 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 7 ms with result: SqlDataReader
+
+2018-03-23 11:09:44,552 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:09:44,552 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:09:44 +08:00
+
+2018-03-23 11:12:18,524 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:12:18 +08:00
+
+2018-03-23 11:12:18,525 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:12:18,525 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:12:18,525 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:12:18,525 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:12:18 +08:00
+
+2018-03-23 11:12:18,531 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 11:12:18,531 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:12:18,532 [23] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:12:18 +08:00
+
+2018-03-23 11:13:24,554 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,554 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:13:24,554 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,554 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:13:24,554 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,559 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,559 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,559 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,560 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,560 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:13:24,560 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,560 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:13:24,560 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,562 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,562 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,562 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,562 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,563 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:13:24,563 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,563 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:13:24,563 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,567 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,567 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,567 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,568 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,568 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:13:24,568 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,568 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:13:24,568 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,572 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,572 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,572 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,573 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,573 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:13:24,574 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,574 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:13:24,574 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,576 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,576 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,576 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,577 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,577 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:13:24,577 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,577 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:13:24,577 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,578 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,578 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,579 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,579 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,579 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:13:24,579 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,579 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:24,581 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:13:24,581 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:24,581 [28] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:24 +08:00
+
+2018-03-23 11:13:33,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:13:33 +08:00
+
+2018-03-23 11:13:33,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:13:33,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:33,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:13:33,988 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:13:33 +08:00
+
+2018-03-23 11:13:33,990 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:13:33,990 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:13:33,990 [9] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:13:33 +08:00
+
+2018-03-23 11:14:05,957 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:05 +08:00
+
+2018-03-23 11:14:05,957 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:14:05,957 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:05,957 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:05,957 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:05 +08:00
+
+2018-03-23 11:14:05,964 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 6 ms with result: SqlDataReader
+
+2018-03-23 11:14:05,964 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:05,964 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:05 +08:00
+
+2018-03-23 11:14:10,848 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:10 +08:00
+
+2018-03-23 11:14:10,849 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:14:10,849 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:10,849 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:10,849 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:10 +08:00
+
+2018-03-23 11:14:10,852 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 3 ms with result: SqlDataReader
+
+2018-03-23 11:14:10,852 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:10,853 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:10 +08:00
+
+2018-03-23 11:14:14,191 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:14 +08:00
+
+2018-03-23 11:14:14,192 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:14:14,192 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:14,192 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '4' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:14,192 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:14 +08:00
+
+2018-03-23 11:14:14,194 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:14:14,194 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:14,194 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:14 +08:00
+
+2018-03-23 11:14:16,330 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:16 +08:00
+
+2018-03-23 11:14:16,330 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:14:16,330 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:16,330 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:16,330 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:16 +08:00
+
+2018-03-23 11:14:16,333 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 2 ms with result: SqlDataReader
+
+2018-03-23 11:14:16,333 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:16,333 [25] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:16 +08:00
+
+2018-03-23 11:14:18,380 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,381 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:14:18,381 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,381 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:18,381 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,410 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 29 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,410 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,410 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,411 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,411 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:14:18,411 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,411 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:18,411 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,413 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,413 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,413 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,414 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,414 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:18,414 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,414 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:14:18,414 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,416 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,416 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,416 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,417 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,417 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:18,417 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,417 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:14:18,417 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,418 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,418 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,418 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,419 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,419 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:18,419 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,419 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:14:18,419 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,421 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,421 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,421 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,424 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,425 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:18,425 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,425 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:14:18,425 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,434 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 9 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,434 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,435 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,435 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,435 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:14:18,436 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,436 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:18,437 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:18,437 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:18,437 [29] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:18 +08:00
+
+2018-03-23 11:14:53,877 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,877 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Limit1].[LoginErrorTimes] AS [LoginErrorTimes], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[Name] AS [Name], 
+    [Limit1].[PhoneNum] AS [PhoneNum], 
+    [Limit1].[PasswordHash] AS [PasswordHash], 
+    [Limit1].[PasswordSalt] AS [PasswordSalt], 
+    [Limit1].[Email] AS [Email], 
+    [Limit1].[CityId] AS [CityId], 
+    [Limit1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+    [Limit1].[CreateDateTime] AS [CreateDateTime], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[Id1] AS [Id1], 
+    [Limit1].[Name1] AS [Name1], 
+    [Limit1].[CreateDateTime1] AS [CreateDateTime1], 
+    [Limit1].[IsDeleted1] AS [IsDeleted1]
+    FROM ( SELECT TOP (2) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[Name] AS [Name], 
+        [Extent1].[PhoneNum] AS [PhoneNum], 
+        [Extent1].[PasswordHash] AS [PasswordHash], 
+        [Extent1].[PasswordSalt] AS [PasswordSalt], 
+        [Extent1].[Email] AS [Email], 
+        [Extent1].[CityId] AS [CityId], 
+        [Extent1].[LoginErrorTimes] AS [LoginErrorTimes], 
+        [Extent1].[LastLoginErrorDateTime] AS [LastLoginErrorDateTime], 
+        [Extent1].[CreateDateTime] AS [CreateDateTime], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[Name] AS [Name1], 
+        [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+        [Extent2].[IsDeleted] AS [IsDeleted1]
+        FROM  [dbo].[T_AdminUsers] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+        WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+2018-03-23 11:14:53,877 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,877 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:53,877 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,884 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 6 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,884 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,885 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,885 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,886 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CityId] AS [CityId], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[Name] AS [Name1], 
+    [Extent2].[CreateDateTime] AS [CreateDateTime1], 
+    [Extent2].[IsDeleted] AS [IsDeleted1]
+    FROM  [dbo].[T_Regions] AS [Extent1]
+    INNER JOIN [dbo].[T_Cities] AS [Extent2] ON [Extent1].[CityId] = [Extent2].[Id]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[CityId] = @p__linq__0)
+2018-03-23 11:14:53,886 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,886 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '1' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:14:53,886 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,890 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,890 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,890 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,891 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,891 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:53,891 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,891 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '户型' (Type = String, Size = 4000)
+
+2018-03-23 11:14:53,891 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,905 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 13 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,905 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,905 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,907 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,908 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:53,908 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,908 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋类型' (Type = String, Size = 4000)
+
+2018-03-23 11:14:53,908 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,942 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 34 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,942 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,942 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,943 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,943 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:53,943 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,943 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '房屋状态' (Type = String, Size = 4000)
+
+2018-03-23 11:14:53,943 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,953 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 9 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,953 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,953 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,954 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,954 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TypeName] AS [TypeName], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_IdNames] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[TypeName] = @p__linq__0)
+2018-03-23 11:14:53,955 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,955 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '装修' (Type = String, Size = 4000)
+
+2018-03-23 11:14:53,955 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,956 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,956 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,956 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,957 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,957 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IconName] AS [IconName], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted]
+    FROM [dbo].[T_Attachments] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+2018-03-23 11:14:53,957 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,957 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:14:53,959 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:14:53,959 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:14:53,959 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:14:53 +08:00
+
+2018-03-23 11:15:14,544 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:15:14 +08:00
+
+2018-03-23 11:15:14,544 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:15:14,544 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:14,544 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:15:14,544 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:15:14 +08:00
+
+2018-03-23 11:15:14,548 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 4 ms with result: SqlDataReader
+
+2018-03-23 11:15:14,548 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:14,549 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:15:14 +08:00
+
+2018-03-23 11:15:16,291 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:15:16 +08:00
+
+2018-03-23 11:15:16,292 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:15:16,292 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:16,292 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '4' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:15:16,292 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:15:16 +08:00
+
+2018-03-23 11:15:16,294 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 1 ms with result: SqlDataReader
+
+2018-03-23 11:15:16,294 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:16,294 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:15:16 +08:00
+
+2018-03-23 11:15:17,357 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:15:17 +08:00
+
+2018-03-23 11:15:17,358 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:15:17,358 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:17,358 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:15:17,358 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:15:17 +08:00
+
+2018-03-23 11:15:17,365 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 6 ms with result: SqlDataReader
+
+2018-03-23 11:15:17,365 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:15:17,365 [30] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:15:17 +08:00
+
+2018-03-23 11:40:44,996 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:40:44 +08:00
+
+2018-03-23 11:40:44,996 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:40:44,996 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:40:44,996 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '3' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:40:44,996 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:40:44 +08:00
+
+2018-03-23 11:40:45,005 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 8 ms with result: SqlDataReader
+
+2018-03-23 11:40:45,005 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:40:45,005 [74] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:40:45 +08:00
+
+2018-03-23 11:40:47,725 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:Opened connection at 2018/3/23 星期五 上午 11:40:47 +08:00
+
+2018-03-23 11:40:47,726 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:SELECT 
+    1 AS [C1], 
+    [Extent1].[BuiltYear] AS [BuiltYear], 
+    [Extent1].[CreateDateTime] AS [CreateDateTime], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Location] AS [Location], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[RegionId] AS [RegionId], 
+    [Extent1].[Traffic] AS [Traffic]
+    FROM [dbo].[T_Communities] AS [Extent1]
+    WHERE (0 = [Extent1].[IsDeleted]) AND ([Extent1].[RegionId] = @p__linq__0)
+2018-03-23 11:40:47,726 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:40:47,726 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- p__linq__0: '2' (Type = Int64, IsNullable = false)
+
+2018-03-23 11:40:47,726 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Executing at 2018/3/23 星期五 上午 11:40:47 +08:00
+
+2018-03-23 11:40:47,732 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:-- Completed in 5 ms with result: SqlDataReader
+
+2018-03-23 11:40:47,732 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:
+
+2018-03-23 11:40:47,732 [72] DEBUG ZSZService.MyDbContent - EF执行的sql为:Closed connection at 2018/3/23 星期五 上午 11:40:47 +08:00
+
