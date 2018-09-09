@@ -8,6 +8,9 @@ using ZSZ.IService;
 
 namespace ZSZ.AdminWeb.App_Start
 {
+    /// <summary>
+    /// 在执行action之前判断有无登陆，没有登陆的话就先登陆。登陆了的话判断当前用户有无该action的访问权限(通过标注属性)
+    /// </summary>
     public class ZSZAuthorizationFilter : IAuthorizationFilter
     {
         //由于该过滤类是我们自己定义，AutoFac没有帮我们注册，不能属性注入。想要自动属性注入就要在Global注册这个类。
